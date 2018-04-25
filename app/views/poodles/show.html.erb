@@ -5,3 +5,8 @@ here is the poodle:
 <p><%= @poodle.breed %></p>
 <p><%= @poodle.age %></p>
 <p><%= @poodle.color %></p>
+
+
+<p><a href="/poodles/<%= @poodle.id %>/edit">Edit the poodle here</a></p>
+
+<%= link_to "delete the poodle", "/poodles/#{@poodle.id}", method: :delete %>

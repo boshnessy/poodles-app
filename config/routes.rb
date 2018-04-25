@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get '/poodles/new' => 'poodles#new'
   post '/poodles' => 'poodles#create'
   get '/poodles/:id' => 'poodles#show'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  patch '/poodles/:id' => 'poodles#update'
+  get '/poodles/:id/edit' => 'poodles#edit'
+  delete '/poodles/:id' => 'poodles#destroy'
 end

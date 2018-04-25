@@ -2,7 +2,7 @@
 
 
   <% @poodles.each do |poodle| %>
-    <p><%= poodle.name %></p>
+    <p><a href="/poodles/<%= poodle.id %>"><%= poodle.name %></a></p>
     <p><%= poodle.breed %></p>
     <p><%= poodle.age %></p>
     <p><%= poodle.color %></p>

@@ -1,0 +1,9 @@
+Edit a poodle here
+
+<%= form_tag "/poodles/#{@poodle.id}", method: :patch do %>
+  <p>name:<input type="text" name="the_name" value="<%= @poodle.name %>"></p>
+  <p>breed:<input type="text" name="breed" value="<%= @poodle.breed %>"></p>
+  <p>age:<input type="text" name="age" value="<%= @poodle.age %>"></p>
+  <p>color:<input type="text" name="color" value="<%= @poodle.color %>"></p>
+  <input type="submit" value="Update poodle">
+<% end %>
