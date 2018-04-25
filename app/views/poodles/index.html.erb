@@ -1,0 +1,11 @@
+<p>I am the index action</p>
+
+
+  <% @poodles.each do |poodle| %>
+    <p><%= poodle.name %></p>
+    <p><%= poodle.breed %></p>
+    <p><%= poodle.age %></p>
+    <p><%= poodle.color %></p>
+    <hr>
+  <% end %>
+

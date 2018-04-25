@@ -1,0 +1,9 @@
+Here is where the form will go
+
+<%= form_tag "/poodles", method: :post do %>
+  <p>name:<input type="text" name="the_name"></p>
+  <p>breed:<input type="text" name="breed"></p>
+  <p>age:<input type="text" name="age"></p>
+  <p>color:<input type="text" name="color"></p>
+  <input type="submit" value="Make a new poodle">
+<% end %>
